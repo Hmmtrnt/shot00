@@ -63,7 +63,7 @@ void Player::update()
 	}
 	else
 	{
-		m_vec.y *= 0.9f;
+		m_vec.y *= 0.8f;
 	}
 	if (padState & PAD_INPUT_LEFT)
 	{
@@ -77,13 +77,12 @@ void Player::update()
 	}
 	else
 	{
-		m_vec.x *= 0.9f;
+		m_vec.x *= 0.8f;
 	}
 	m_pos += m_vec;
 }
 
 void Player::draw()
 {
-	DrawGraphF(m_pos.x, m_pos.y, m_handle, true);
-	
+	DrawGraphF(m_pos.x, m_pos.y, m_handle, true);	
 }
