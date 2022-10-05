@@ -23,7 +23,9 @@ public:
 	void draw();
 
 	// 弾の生成
-	bool createShot(Vec2 pos);
+	bool createShotNormal(Vec2 pos);
+	bool createShotCurve(Vec2 pos);
+	bool createShotCrawl(Vec2 pos);
 	
 private:
 	// ショットの最大数
@@ -37,8 +39,12 @@ private:
 	// プレイヤー
 	Player m_player;
 	// ショット
-//	ShotNormal m_shot[kShotMax];
-//	ShotUp m_shot[kShotMax];
-//	ShotCurve m_shot[kShotMax];
-	ShotCrawl m_shot[kShotMax];
+//	ShotBase* m_pShot[kShotMax];
+
+	ShotNormal* m_pShotNormal[kShotMax];
+	ShotCurve* m_pShotCurve[kShotMax];
+	ShotCrawl* m_pShotCrawl[kShotMax];
+
+
+//	ShotUp m_shotUp[kShotMax];
 };

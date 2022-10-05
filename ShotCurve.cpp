@@ -3,7 +3,7 @@
 
 namespace
 {
-	constexpr float kShotSpeedX = 5.0f;
+	constexpr float kShotSpeedX = 8.0f;
 	constexpr float kShotSpeedY = 10.0f;
 	// èdóÕ
 	constexpr float kGrabity = 0.5f;
