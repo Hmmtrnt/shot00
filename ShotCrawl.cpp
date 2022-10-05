@@ -30,7 +30,7 @@ void ShotCrawl::update()
 			m_vec.y = 0;
 			m_vec.x = -kShotSpeedX;
 		}
-		else if (m_pos.x > Game::kScreenWidth - 16)
+		else if (m_pos.x > Game::kScreenWidth - 20)
 		{
 			m_vec.y = -8.0f;
 			m_vec.x = 0;
