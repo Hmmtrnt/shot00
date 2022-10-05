@@ -4,6 +4,7 @@
 #include "ShotNormal.h"
 #include "ShotUp.h"
 #include "ShotCurve.h"
+#include "ShotCrawl.h"
 
 class SceneMain
 {
@@ -38,5 +39,6 @@ private:
 	// ƒVƒ‡ƒbƒg
 //	ShotNormal m_shot[kShotMax];
 //	ShotUp m_shot[kShotMax];
-	ShotCurve m_shot[kShotMax];
+//	ShotCurve m_shot[kShotMax];
+	ShotCrawl m_shot[kShotMax];
 };

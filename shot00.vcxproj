@@ -143,6 +143,7 @@
     <ClCompile Include="player.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="ShotBase.cpp" />
+    <ClCompile Include="ShotCrawl.cpp" />
     <ClCompile Include="ShotCurve.cpp" />
     <ClCompile Include="ShotUp.cpp" />
     <ClCompile Include="ShotNormal.cpp" />
@@ -153,6 +154,7 @@
     <ClInclude Include="player.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="ShotBase.h" />
+    <ClInclude Include="ShotCrawl.h" />
     <ClInclude Include="ShotCurve.h" />
     <ClInclude Include="ShotUp.h" />
     <ClInclude Include="ShotNormal.h" />
