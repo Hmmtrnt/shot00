@@ -1,10 +1,7 @@
 #pragma once
 
 #include "player.h"
-#include "ShotNormal.h"
-#include "ShotUp.h"
-#include "ShotCurve.h"
-#include "ShotCrawl.h"
+#include "ShotBase.h"
 
 class SceneMain
 {
@@ -39,11 +36,11 @@ private:
 	// プレイヤー
 	Player m_player;
 	// ショット
-//	ShotBase* m_pShot[kShotMax];
+	ShotBase* m_pShot[kShotMax];
 
-	ShotNormal* m_pShotNormal[kShotMax];
-	ShotCurve* m_pShotCurve[kShotMax];
-	ShotCrawl* m_pShotCrawl[kShotMax];
+//	ShotNormal* m_pShotNormal[kShotMax];
+//	ShotCurve* m_pShotCurve[kShotMax];
+//	ShotCrawl* m_pShotCrawl[kShotMax];
 
 
 //	ShotUp m_shotUp[kShotMax];
