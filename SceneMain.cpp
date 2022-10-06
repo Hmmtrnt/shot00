@@ -4,6 +4,7 @@
 #include "ShotUp.h"
 #include "ShotCurve.h"
 #include "ShotCrawl.h"
+#include <cassert>
 
 namespace
 {
@@ -50,7 +51,7 @@ void SceneMain::end()
 	DeleteGraph(m_hShotGraphic);
 	for (auto& pShot : m_pShotVt)
 	{
-		if (!pShot)	continue;
+		assert(pShot);
 		delete pShot;
 		pShot = nullptr;
 	}
@@ -65,7 +66,6 @@ void SceneMain::update()
 	while (it != m_pShotVt.end())
 	{
 		auto& pShot = (*it);
-
 		if (!pShot)
 		{
 			it++;
