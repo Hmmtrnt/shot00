@@ -1,5 +1,6 @@
 #pragma once
 
+#include <vector>
 #include "player.h"
 #include "ShotBase.h"
 
@@ -36,12 +37,6 @@ private:
 	// プレイヤー
 	Player m_player;
 	// ショット
-	ShotBase* m_pShot[kShotMax];
-
-//	ShotNormal* m_pShotNormal[kShotMax];
-//	ShotCurve* m_pShotCurve[kShotMax];
-//	ShotCrawl* m_pShotCrawl[kShotMax];
-
-
-//	ShotUp m_shotUp[kShotMax];
+	std::vector<ShotBase*>m_pShotVt;
+	//ShotBase* m_pShot[kShotMax];
 };
