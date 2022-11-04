@@ -28,6 +28,7 @@ public:
 	Vec2 getPos() const { return m_pos; }
 
 private:
+	//グラフィックハンドル
 	int m_handle;
 
 	// SceneMainのポインタ
